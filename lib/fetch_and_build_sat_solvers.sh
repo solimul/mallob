@@ -41,10 +41,10 @@ if echo $solvers|grep -q "g" && [ ! -f glucose/libglucose.a ]; then
 fi
 
 if echo $solvers|grep -q "y" && [ ! -f yalsat/libyals.a ]; then
-    echo "Building YalSAT ..."
+    echo "Building yallin ..."
 
-    unzip yalsat-03v.zip
-    mv yalsat-03v yalsat
+    unzip yal-lin-master.zip
+    mv yal-lin-master yalsat
     cd yalsat
     for f in *.c *.h ; do
         sed -i 's/exit ([01])/abort()/g' $f
