@@ -1,0 +1,34 @@
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/solimul/Drives/Research/Development/mallob-master/lib/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b7f1e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b7f1e.dir/build.make CMakeFiles/cmTC_b7f1e.dir/build
+gmake[1]: Entering directory '/home/solimul/Drives/Research/Development/mallob-master/lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7f1e.dir/test_mpi.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b7f1e.dir/test_mpi.c.o -c /usr/share/cmake-3.22/Modules/FindMPI/test_mpi.c
+/usr/share/cmake-3.22/Modules/FindMPI/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+    1 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_b7f1e.dir/build.make:78: CMakeFiles/cmTC_b7f1e.dir/test_mpi.c.o] Error 1
+gmake[1]: Leaving directory '/home/solimul/Drives/Research/Development/mallob-master/lib/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b7f1e/fast] Error 2
+
+
+
+The MPI test test_mpi for CXX in mode normal failed to compile with the following output:
+Change Dir: /home/solimul/Drives/Research/Development/mallob-master/lib/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7d63e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7d63e.dir/build.make CMakeFiles/cmTC_7d63e.dir/build
+gmake[1]: Entering directory '/home/solimul/Drives/Research/Development/mallob-master/lib/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7d63e.dir/test_mpi.cpp.o
+/usr/bin/c++    -o CMakeFiles/cmTC_7d63e.dir/test_mpi.cpp.o -c /home/solimul/Drives/Research/Development/mallob-master/lib/build/CMakeFiles/FindMPI/test_mpi.cpp
+/home/solimul/Drives/Research/Development/mallob-master/lib/build/CMakeFiles/FindMPI/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+    1 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_7d63e.dir/build.make:78: CMakeFiles/cmTC_7d63e.dir/test_mpi.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/solimul/Drives/Research/Development/mallob-master/lib/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7d63e/fast] Error 2
+
+
+

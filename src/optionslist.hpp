@@ -83,7 +83,7 @@ OPT_INT(watchdogAbortMillis,             "wam", "watchdog-abort-millis",        
 
 OPT_FLOAT(appCommPeriod,                 "s", "app-comm-period",                      1,    0, LARGE_INT,      "Do job-internal communication every t seconds") 
 OPT_FLOAT(balancingPeriod,               "p", "balancing-period",                     0.1,  0, LARGE_INT,      "Minimum interval between subsequent rounds of balancing")
-OPT_FLOAT(clauseBufferDiscountFactor,    "cbdf", "clause-buffer-discount",            0.9,  0.5, 1,            "Clause buffer discount factor: reduce buffer size per PE by <factor> each depth")
+OPT_FLOAT(clauseBufferDiscountFactor,    "cbdf", "clause-buffer-discount",            1,  0.5, 1,            "Clause buffer discount factor: reduce buffer size per PE by <factor> each depth")
 OPT_FLOAT(clauseFilterClearInterval,     "cfci", "clause-filter-clear-interval",      20,   -1, LARGE_INT,     "Set clear interval of clauses in solver filters (-1: never clear, 0: always clear")
 OPT_FLOAT(crashMonkeyProbability,        "cmp", "crash-monkey",                       0,    0, 1,              "Have a solver thread crash with this probability each time it imports a clause")
 OPT_FLOAT(growthPeriod,                  "g", "growth-period",                        0,    0, LARGE_INT,      "Grow job demand exponentially every t seconds (0: immediate full growth)" )
